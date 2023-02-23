@@ -1,0 +1,8 @@
+const http = require('http');
+http
+  .createServer(function (request, response) {
+    response.writeHead(200, { 'content-Type': 'text/html' });
+    response.write('Hello world');
+    response.end();
+  })
+  .listen(8000);
