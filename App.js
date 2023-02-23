@@ -1,5 +1,4 @@
-var calculator = require('./calc');
-var x = 50,
-  y = 20;
+var add = require('./calc');
+var res = add(2, 4);
 
-console.log('Addition of 50 and 20 is ' + calculator.add(x, y));
+console.log(res);
