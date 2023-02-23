@@ -1,9 +1,15 @@
 const http = require('http');
 const port = 8080;
+const { getUrl } = require('./utils');
 http
   .createServer(function (request, response) {
     console.log('server created with port', port);
-    console.log(request.url);
+    const url = getUrl(request.url);
+    switch (url) {
+      case 'file1':
+      case 'file2':
+      default:
+    }
     response.writeHead(200, { 'content-Type': 'text/html' });
     response.write('Hello world');
     response.end();
