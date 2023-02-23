@@ -7,7 +7,9 @@ http
     const url = getUrl(request.url);
     switch (url) {
       case 'file1':
+        break;
       case 'file2':
+        break;
       default:
     }
     response.writeHead(200, { 'content-Type': 'text/html' });
